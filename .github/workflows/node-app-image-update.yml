@@ -20,3 +20,4 @@ jobs:
       with:
         token: ${{ secrets.PAT }}
         commit_message: Apply image name changes
+        push_options: --force
