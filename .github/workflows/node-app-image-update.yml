@@ -23,3 +23,5 @@ jobs:
         token: ${{ secrets.PAT }}
         commit_message: Apply image name changes
         push_options: --force
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT}}
