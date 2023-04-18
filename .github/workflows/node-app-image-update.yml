@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         token: ${{ secrets.PAT }}
 
@@ -20,8 +20,7 @@ jobs:
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        token: ${{ secrets.PAT }}
         commit_message: Apply image name changes
         push_options: --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT}}
+        commit_user_email: vinodk.katakam@gmail.com
+        commit_user_name: GitHub Actions
